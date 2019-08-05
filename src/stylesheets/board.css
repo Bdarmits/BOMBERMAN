@@ -1,0 +1,64 @@
+#how-to {
+  padding: 1em;
+  font-weight: bold;
+}
+#start {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+h2 {
+  font-size: 20px;
+}
+#game-start-cover {
+  width: 1250px;
+  height: 593px;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 140px;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  width: 40em;
+  height: 20em;
+  position: fixed;
+  top: 2em;
+  left: 21em;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px black;
+  z-index: 5;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  visibility: hidden;
+}
+#lost, #won {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  top: 14em;
+  left: 25em;
+  visibility: hidden;
+}
+#close {
+  font-size: 2em;
+  cursor: pointer;
+}
+.show {
+  visibility: visible !important;
+}
+canvas {
+  background: #ffdead;
+  display: block;
+  margin: 0 auto;
+}

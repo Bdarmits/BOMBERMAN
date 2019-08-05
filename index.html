@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOMBERMAN</title>
+    <link rel="stylesheet" href="src/stylesheets/board.css">
+    <script type="text/javascript" src="./src/game.js"></script>
+  </head>
+  <body>
+    <section class="modal">
+      <section class="top-nav">
+        <h2>How to play</h2>
+        <span id="close">&#10006;</span>
+      </section>
+      <section class="modal-content">
+        <p>
+          Use the arrow keys to move around the board
+        </p>
+        <p>
+          Press 'Space' to place a bomb. Bomb explosion time: 4sec.
+        </p>
+      </section>
+    </section>
+    <section class="modal" id="lost">
+        <section class="modal-content">
+          <h2>You lost!</h2>
+          <button class="play-again">PLAY AGAIN</button>
+        </section>
+      </section>
+      <section class="modal" id="won">
+        <section class="modal-content">
+          <h2>You won!</h2>
+          <button class="play-again">PLAY AGAIN</button>
+        </section>
+      </section>
+    <section class="top-nav">
+      <section class="buttons">
+        <button id="how-to">HOW TO PLAY</button>
+      </section>
+    </section>
+    <section id="game-start-cover">
+      <button id="start">START</button>
+    </section>
+    <canvas id="my-canvas" width="1100" height="593"></canvas>
+  </body>
+</html>
